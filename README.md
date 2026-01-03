@@ -27,7 +27,7 @@ Lenguaje: Java
 
 Entorno: Visual Studio Code
 
-Paradigma: Programación Orientada a Objetos
+Modelo: Programación Orientada a Objetos
 
 Persistencia (próximamente): Archivos .txt
 
