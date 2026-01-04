@@ -11,10 +11,11 @@ public class Principal {
         String codigo, nombre, categoria, descripcion, codigoBuscado;
         int nuevoPrecio, precio;
         boolean disponible = true;
+        gestor.cargarDatos();
         System.out.println("¡Bienvenido!");
         do {
             try {
-                System.out.println("--GESTOR DE PRODUCTOS V1--");
+                System.out.println("--GESTOR DE PRODUCTOS V1.1--");
                 System.out.println("1) Agregar producto.");
                 System.out.println("2) Eliminar producto.");
                 System.out.println("3) Mostrar productos.");
@@ -39,12 +40,14 @@ public class Principal {
 
                         Productos producto = new Productos(codigo, nombre, precio, disponible, categoria, descripcion);
                         gestor.agregarProducto(codigo, producto);
+                        gestor.guardadoDeDatos();
                         break;
                     case 2:
                         input.nextLine();
                         System.out.println("Ingrese el codigo del producto a eliminar.");
                         codigoBuscado = input.nextLine();
                         gestor.eliminarProducto(codigoBuscado);
+                        gestor.guardadoDeDatos();
                         break;
                     case 3:
                         System.out.println("Productos disponibles -- Cantidad de productos:" + gestor.tamañoLista());
@@ -58,6 +61,7 @@ public class Principal {
                         nuevoPrecio = input.nextInt();
                         input.nextLine();
                         gestor.actualizarPrecio(codigoBuscado, nuevoPrecio);
+                        gestor.guardadoDeDatos();
                         break;
                     case 5:
                         input.nextLine();
