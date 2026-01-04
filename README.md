@@ -1,4 +1,5 @@
 📦 Sistema de Inventario en Java
+
 📌 Descripción del proyecto
 
 Este proyecto es un Sistema de Inventario desarrollado en Java, cuyo objetivo es gestionar productos de manera sencilla y eficiente desde consola.
