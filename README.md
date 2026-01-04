@@ -1,25 +1,33 @@
 📦 Sistema de Inventario en Java
 📌 Descripción del proyecto
 
-Este proyecto es un Sistema de Inventario desarrollado en Java, cuyo objetivo es gestionar productos de manera sencilla y eficiente.
-Permite registrar, visualizar y administrar productos dentro de un inventario, aplicando conceptos fundamentales de programación orientada a objetos (POO).
+Este proyecto es un Sistema de Inventario desarrollado en Java, cuyo objetivo es gestionar productos de manera sencilla y eficiente desde consola.
+Permite registrar, visualizar, buscar, actualizar y eliminar productos, aplicando conceptos fundamentales de Programación Orientada a Objetos (POO) y manejo básico de archivos para la persistencia de datos.
+El sistema se centra principalmente en la lógica del programa, sin interfaz gráfica, priorizando una estructura clara, modular y fácil de mantener.
 
-El sistema está pensado para funcionar desde consola y centrarse principalmente en la lógica del programa, sin interfaz gráfica.
-
-🚀 Próxima actualización:
-Se añadirá persistencia de datos mediante archivos .txt, lo que permitirá que la información se guarde y se cargue automáticamente, haciendo el sistema 100% funcional.
-
-🧠 Funcionalidades actuales
+🧠 Funcionalidades (Versión 1.1)
 
 📋 Registro de productos
+🔍 Búsqueda de productos por código
+🗑️ Eliminación de productos del inventario
+✏️ Actualización del precio de productos
+📦 Visualización de todos los productos registrados
+💾 Persistencia de datos mediante archivos .txt
+🔄 Carga automática de productos al iniciar el programa
 
-🔍 Consulta de productos en inventario
+🧱 Conceptos aplicados
 
-📦 Gestión básica del inventario
+Programación Orientada a Objetos (POO)
 
-🧱 Uso de clases y objetos (Productos, Inventario, Principal)
+Uso de clases y objetos (Productos, Inventario, Principal)
 
-🧩 Estructura clara y modular del código
+Manejo de colecciones (ArrayList)
+
+Lectura y escritura de archivos (BufferedReader, BufferedWriter)
+
+Manejo de excepciones
+
+Separación de responsabilidades (lógica, datos y ejecución)
 
 🛠️ Tecnologías utilizadas
 
@@ -29,25 +37,24 @@ Entorno: Visual Studio Code
 
 Modelo: Programación Orientada a Objetos
 
-Persistencia (próximamente): Archivos .txt
+Persistencia: Archivos .txt
 
 📂 Estructura del proyecto
+
 📁 Proyecto
- ┣ 📄 Principal.java      // Clase principal del programa
- ┣ 📄 Productos.java      // Clase que representa los productos
- ┣ 📄 Inventario.java     // Clase que gestiona el inventario
- ┗ 📄 README.md
+┣ 📄 Principal.java // Controla el flujo del programa y el menú
+┣ 📄 Productos.java // Representa la entidad Producto
+┣ 📄 Inventario.java // Gestiona el inventario y la persistencia de datos
+┣ 📁 Productos // Carpeta donde se guardan los datos
+┃ ┗ 📄 ProductosGuardados.txt
+┗ 📄 README.md
 
 🔜 Próximas mejoras
 
-💾 Guardado y carga de datos en archivos .txt
+🔧 Validaciones adicionales de datos
+🖥️ Posible implementación de interfaz gráfica (GUI)
 
-🔄 Persistencia automática del inventario
+👤 Autor
 
-📊 Mejor organización de los datos
-
-🧪 Validaciones adicionales
-
-Autor
 Proyecto desarrollado por [YoungJuan-Dev]
 Estudiante de programación :)
