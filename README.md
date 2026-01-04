@@ -2,7 +2,9 @@
 📌 Descripción del proyecto
 
 Este proyecto es un Sistema de Inventario desarrollado en Java, cuyo objetivo es gestionar productos de manera sencilla y eficiente desde consola.
+
 Permite registrar, visualizar, buscar, actualizar y eliminar productos, aplicando conceptos fundamentales de Programación Orientada a Objetos (POO) y manejo básico de archivos para la persistencia de datos.
+
 El sistema se centra principalmente en la lógica del programa, sin interfaz gráfica, priorizando una estructura clara, modular y fácil de mantener.
 
 🧠 Funcionalidades (Versión 1.1)
